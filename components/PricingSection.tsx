@@ -2,7 +2,10 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, Tent, Receipt, CalendarClock, MapPin } from 'lucide-react';
+import { CheckCircle2, Tent, Receipt, CalendarClock, MapPin, MessageCircle } from 'lucide-react';
+import { Button } from './ui/button';
+
+const CONTACT_WHATSAPP = "https://wa.me/966551804470";
 
 const pricingItems = [
   {
@@ -108,7 +111,7 @@ export function PricingSection() {
 
           {/* Pricing Summary & Notes Column */}
           <div className="lg:col-span-1 flex flex-col gap-6">
-            {/* Price Box */}
+            {/* Offers Box */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -117,25 +120,40 @@ export function PricingSection() {
             >
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
               
-              <div className="flex items-center gap-3 justify-end mb-8 border-b border-white/10 pb-6">
-                <h3 className="font-sans font-bold text-2xl">الملخص المالي</h3>
+              <div className="flex items-center gap-3 justify-end mb-6 border-b border-white/10 pb-4">
+                <h3 className="font-sans font-bold text-2xl">العروض الحالية</h3>
                 <Receipt className="w-6 h-6 text-secondary" />
               </div>
 
-              <div className="space-y-4 font-body text-right mb-8 border-b border-white/10 pb-6">
-                <div className="flex justify-between text-white/80">
-                  <span>160,000 ر.س</span>
-                  <span>السعر الإجمالي قبل الضريبة</span>
+              <div className="space-y-6 font-body text-right mb-8">
+                <p className="text-white/95 leading-relaxed text-base">
+                  يسر شركة <span className="text-secondary font-bold">فور توب</span> أن تقدم لكم عروضاً وتخفيضات حصرية بمناسبة الموسم الجديد:
+                </p>
+                
+                <div className="space-y-3">
+                  <div className="bg-white/5 rounded-xl p-4 border border-white/10 flex justify-between items-center hover:bg-white/10 transition-colors duration-300">
+                    <span className="font-sans font-bold text-2xl text-secondary">30%</span>
+                    <span className="text-white/90 font-medium">خصم على تجهيز الخيام الأوروبية</span>
+                  </div>
+                  
+                  <div className="bg-white/5 rounded-xl p-4 border border-white/10 flex justify-between items-center hover:bg-white/10 transition-colors duration-300">
+                    <span className="font-sans font-bold text-2xl text-secondary">20%</span>
+                    <span className="text-white/90 font-medium">خصم على الكنب والتكييف والأثاث</span>
+                  </div>
                 </div>
-                <div className="flex justify-between text-secondary">
-                  <span>24,000 ر.س</span>
-                  <span>الضريبة (15%)</span>
-                </div>
+                
+                <p className="text-white/70 text-xs leading-relaxed">
+                  * تطبق الشروط والأحكام. العروض سارية لفترة محدودة وتشمل جميع التجهيزات.
+                </p>
               </div>
 
-              <div className="text-right">
-                <span className="block font-body text-white/80 text-sm mb-2">السعر الإجمالي بعد الضريبة</span>
-                <span className="font-sans font-bold text-4xl text-white">184,000 <span className="text-xl text-secondary">ر.س</span></span>
+              <div className="text-center">
+                <a href={CONTACT_WHATSAPP} target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-3 flex items-center justify-center gap-2 border-0 shadow-lg shadow-[#25D366]/20">
+                    <MessageCircle className="w-4 h-4 fill-white text-white" />
+                    <span>طلب عرض سعر مخفض</span>
+                  </Button>
+                </a>
               </div>
             </motion.div>
 

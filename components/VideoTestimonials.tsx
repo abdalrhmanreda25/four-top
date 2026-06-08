@@ -47,10 +47,10 @@ function VideoCard({ src }: { src: string }) {
          </div>
       </div>
 
-      {/* Mute/Unmute Toggle */}
+      {/* Mute/Unmute Toggle - Always visible so users can easily toggle sound on both mobile and desktop */}
       <button 
         onClick={toggleMute}
-        className="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary/80 z-10"
+        className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary/85 z-20 border border-white/10 shadow-lg cursor-pointer transition-all duration-300 active:scale-95"
       >
         {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
       </button>

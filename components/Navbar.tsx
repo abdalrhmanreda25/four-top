@@ -5,6 +5,9 @@ import { Button } from "./ui/button";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { MapPin, MessageCircle } from "lucide-react";
+
+const CONTACT_WHATSAPP = "https://wa.me/966551804470";
 
 export function Navbar() {
   const { scrollY } = useScroll();
@@ -48,13 +51,28 @@ export function Navbar() {
           <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="font-body text-white/80 hover:text-secondary transition-colors text-sm font-medium">من نحن</button>
         </div>
 
-        {/* Left side: CTA */}
-        <div className="flex items-center">
-          <a href="https://www.google.com/maps/search/?api=1&query=24°43'00.4%22N+46°50'42.3%22E" target="_blank" rel="noopener noreferrer">
-            <Button variant="primary" className="bg-white text-primary hover:bg-slate-100 hover:text-primary px-6 py-2.5 text-sm">
-              موقعنا
-            </Button>
-          </a>
+        {/* Left side: CTA (Location & WhatsApp) */}
+        <div className="flex items-center gap-3">
+          <Button 
+            href="https://www.google.com/maps/search/?api=1&query=24°43'00.4%22N+46°50'42.3%22E" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            variant="primary" 
+            className="bg-white text-primary hover:bg-slate-100 hover:text-primary px-4 py-2 text-sm flex items-center gap-2"
+          >
+            <MapPin className="w-4 h-4 text-secondary" />
+            <span>موقعنا</span>
+          </Button>
+          <Button 
+            href={CONTACT_WHATSAPP} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            variant="primary" 
+            className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-4 py-2 text-sm flex items-center gap-2 border-0 shadow-lg shadow-[#25D366]/20"
+          >
+            <MessageCircle className="w-4 h-4 fill-white text-white" />
+            <span>واتساب</span>
+          </Button>
         </div>
       </div>
     </motion.nav>
