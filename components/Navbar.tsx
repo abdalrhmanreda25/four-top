@@ -7,7 +7,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { MapPin, MessageCircle } from "lucide-react";
 
-const CONTACT_WHATSAPP = "https://wa.me/966551804470";
+const CONTACT_WHATSAPP = "https://wa.me/966570713153";
 
 export function Navbar() {
   const { scrollY } = useScroll();

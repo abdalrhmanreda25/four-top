@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, Tent, Receipt, CalendarClock, MapPin, MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 
-const CONTACT_WHATSAPP = "https://wa.me/966551804470";
+const CONTACT_WHATSAPP = "https://wa.me/966570713153";
 
 const pricingItems = [
   {
