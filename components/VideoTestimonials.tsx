@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Play, Volume2, VolumeX } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { Play } from 'lucide-react';
 
 const videos = [
-  { id: 'main', src: '/videos/main.mp4' },
   { id: 'bath', src: '/videos/bath.mp4' },
   { id: 1, src: '/videos/video1.mp4' },
   { id: 2, src: '/videos/video2.mp4' },
@@ -15,22 +13,26 @@ const videos = [
   { id: 5, src: '/videos/video5.mp4' },
 ];
 
+function FeaturedVideo({ src }: { src: string }) {
+  return (
+    <div className="mx-auto mb-16 max-w-6xl px-6 relative z-10">
+      <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black shadow-[0_30px_90px_-40px_rgba(0,0,0,0.7)]">
+        <video
+          src={src}
+          controls
+          playsInline
+          preload="metadata"
+          className="aspect-video w-full object-cover"
+        />
+      </div>
+    </div>
+  );
+}
+
 function VideoCard({ src }: { src: string }) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isMuted, setIsMuted] = useState(true);
-
-  const toggleMute = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (videoRef.current) {
-      videoRef.current.muted = !videoRef.current.muted;
-      setIsMuted(videoRef.current.muted);
-    }
-  };
-
   return (
     <div className="relative w-[260px] sm:w-[320px] md:w-[400px] h-[160px] sm:h-[200px] md:h-[250px] rounded-3xl overflow-hidden group shadow-[0_10px_40px_-15px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)] hover:shadow-primary/20 transition-all duration-500 cursor-pointer shrink-0">
       <video
-        ref={videoRef}
         src={src}
         autoPlay
         muted
@@ -47,14 +49,6 @@ function VideoCard({ src }: { src: string }) {
           <Play className="w-8 h-8 text-white fill-white ml-1" />
         </div>
       </div>
-
-      {/* Mute/Unmute Toggle - Always visible so users can easily toggle sound on both mobile and desktop */}
-      <button
-        onClick={toggleMute}
-        className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary/85 z-20 border border-white/10 shadow-lg cursor-pointer transition-all duration-300 active:scale-95"
-      >
-        {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
-      </button>
     </div>
   );
 }
@@ -81,6 +75,8 @@ export function VideoTestimonials() {
           </p>
         </motion.div>
       </div>
+
+      <FeaturedVideo src="/videos/main.mp4" />
 
       <div
         className="relative w-full flex items-center"
