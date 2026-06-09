@@ -7,176 +7,164 @@ export const projects = [
   },
   {
     "id": 2,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.33 (1).jpeg"
+    "title": "دورات مياه متنقلة فاخرة للمناسبات",
+    "category": "دورات مياه",
+    "image": "/projects/bath1.jpeg"
   },
   {
     "id": 3,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.33 (2).jpeg"
+    "title": "كابينات حمامات فاخرة كبار الشخصيات",
+    "category": "دورات مياه",
+    "image": "/projects/bath2.jpeg"
   },
   {
     "id": 4,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.33.jpeg"
+    "title": "حمامات VIP مجهزة بالكامل للمناسبات",
+    "category": "دورات مياه",
+    "image": "/projects/bath3.jpeg"
   },
   {
     "id": 5,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.34 (1).jpeg"
+    "title": "تجهيز وتنسيق حفلات زفاف فاخرة",
+    "category": "حفلات زفاف",
+    "image": "/projects/important-1.jpeg"
   },
   {
     "id": 6,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.35 (1).jpeg"
+    "title": "أجنحة معارض بتصميم أوروبي",
+    "category": "معارض",
+    "image": "/projects/important-2.jpeg"
   },
   {
     "id": 7,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.35 (2).jpeg"
+    "title": "قاعات مؤتمرات مجهزة بالكامل",
+    "category": "مؤتمرات",
+    "image": "/projects/important-3.jpeg"
   },
   {
     "id": 8,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.35 (3).jpeg"
+    "title": "تجهيز خيام أوروبية لحفلات الزفاف",
+    "category": "حفلات زفاف",
+    "image": "/projects/important-4.jpeg"
   },
   {
     "id": 9,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.35.jpeg"
+    "title": "بناء وتصميم منصات المعارض",
+    "category": "معارض",
+    "image": "/projects/important-5.jpeg"
   },
   {
     "id": 10,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.36 (1).jpeg"
+    "title": "تنظيم وتجهيز القاعات الكبرى للمؤتمرات",
+    "category": "مؤتمرات",
+    "image": "/projects/important-6.jpeg"
   },
   {
     "id": 11,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.36 (2).jpeg"
+    "title": "ديكورات وتجهيزات حفلات زفاف خارجية VIP",
+    "category": "حفلات زفاف",
+    "image": "/projects/important-7.jpeg"
   },
   {
     "id": 12,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.36 (3).jpeg"
+    "title": "معرض الكتاب الدولي",
+    "category": "معارض",
+    "image": "/projects/project-4.jpeg"
   },
   {
     "id": 13,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.36.jpeg"
+    "title": "معرض الكتاب الدولي",
+    "category": "معارض",
+    "image": "/projects/project-7.jpeg"
   },
   {
     "id": 14,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.37.jpeg"
+    "title": "حفل زفاف العائلة المالكة",
+    "category": "حفلات زفاف",
+    "image": "/projects/project-9.jpeg"
   },
   {
     "id": 15,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.38 (1).jpeg"
+    "title": "معرض الكتاب الدولي",
+    "category": "معارض",
+    "image": "/projects/project-10.jpeg"
   },
   {
     "id": 16,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.38.jpeg"
+    "title": "المؤتمر الطبي السنوي",
+    "category": "مؤتمرات",
+    "image": "/projects/project-11.jpeg"
   },
   {
     "id": 17,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.39 (1).jpeg"
+    "title": "حفل زفاف العائلة المالكة",
+    "category": "حفلات زفاف",
+    "image": "/projects/project-12.jpeg"
   },
   {
     "id": 18,
     "title": "المؤتمر الطبي السنوي",
     "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.39.jpeg"
+    "image": "/projects/project-17.jpeg"
   },
   {
     "id": 19,
     "title": "حفل زفاف العائلة المالكة",
     "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.40 (1).jpeg"
+    "image": "/projects/project-18.jpeg"
   },
   {
     "id": 20,
     "title": "معرض الكتاب الدولي",
     "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.40.jpeg"
+    "image": "/projects/project-19.jpeg"
   },
   {
     "id": 21,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.41 (1).jpeg"
+    "title": "حفل زفاف العائلة المالكة",
+    "category": "حفلات زفاف",
+    "image": "/projects/project-21.jpeg"
   },
   {
     "id": 22,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.41 (2).jpeg"
+    "title": "معرض الكتاب الدولي",
+    "category": "معارض",
+    "image": "/projects/project-22.jpeg"
   },
   {
     "id": 23,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.41.jpeg"
+    "title": "المؤتمر الطبي السنوي",
+    "category": "مؤتمرات",
+    "image": "/projects/project-23.jpeg"
   },
   {
     "id": 24,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.43 (1).jpeg"
+    "title": "معرض الكتاب الدولي",
+    "category": "معارض",
+    "image": "/projects/project-25.jpeg"
   },
   {
     "id": 25,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.43.jpeg"
+    "title": "المؤتمر الطبي السنوي",
+    "category": "مؤتمرات",
+    "image": "/projects/project-26.jpeg"
   },
   {
     "id": 26,
     "title": "معرض الكتاب الدولي",
     "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.45 (1).jpeg"
+    "image": "/projects/project-28.jpeg"
   },
   {
     "id": 27,
     "title": "المؤتمر الطبي السنوي",
     "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.45 (2).jpeg"
+    "image": "/projects/project-29.jpeg"
   },
   {
     "id": 28,
-    "title": "حفل زفاف العائلة المالكة",
-    "category": "حفلات زفاف",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.45.jpeg"
-  },
-  {
-    "id": 29,
-    "title": "معرض الكتاب الدولي",
-    "category": "معارض",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.46.jpeg"
-  },
-  {
-    "id": 30,
-    "title": "المؤتمر الطبي السنوي",
-    "category": "مؤتمرات",
-    "image": "/projects/WhatsApp Image 2026-06-07 at 17.26.47.jpeg"
+    "title": "حمامات VIP فاخرة ومجهزة بالكامل",
+    "category": "دورات مياه",
+    "image": "/projects/bathroom.jpeg"
   }
 ];

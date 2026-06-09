@@ -6,12 +6,13 @@ import { Play, Volume2, VolumeX } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const videos = [
+  { id: 'main', src: '/videos/main.mp4' },
+  { id: 'bath', src: '/videos/bath.mp4' },
   { id: 1, src: '/videos/video1.mp4' },
   { id: 2, src: '/videos/video2.mp4' },
   { id: 3, src: '/videos/video3.mp4' },
   { id: 4, src: '/videos/video4.mp4' },
   { id: 5, src: '/videos/video5.mp4' },
-  { id: 6, src: '/videos/video6.mp4' },
 ];
 
 function VideoCard({ src }: { src: string }) {
@@ -39,16 +40,16 @@ function VideoCard({ src }: { src: string }) {
       />
       {/* Dark gradient overlay at the bottom for controls */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      
+
       {/* Center Play Icon (Decorative) */}
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-         <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-            <Play className="w-8 h-8 text-white fill-white ml-1" />
-         </div>
+        <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
+          <Play className="w-8 h-8 text-white fill-white ml-1" />
+        </div>
       </div>
 
       {/* Mute/Unmute Toggle - Always visible so users can easily toggle sound on both mobile and desktop */}
-      <button 
+      <button
         onClick={toggleMute}
         className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary/85 z-20 border border-white/10 shadow-lg cursor-pointer transition-all duration-300 active:scale-95"
       >
@@ -67,7 +68,7 @@ export function VideoTestimonials() {
   return (
     <section className="py-24 bg-slate-900 overflow-hidden relative">
       <div className="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none" />
-      
+
       <div className="text-center mb-16 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -81,7 +82,7 @@ export function VideoTestimonials() {
         </motion.div>
       </div>
 
-      <div 
+      <div
         className="relative w-full flex items-center"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -104,7 +105,7 @@ export function VideoTestimonials() {
             }}
           >
             {marqueeVideos.map((video, idx) => (
-               <VideoCard key={idx} src={video.src} />
+              <VideoCard key={idx} src={video.src} />
             ))}
           </motion.div>
         </div>

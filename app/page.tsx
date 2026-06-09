@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-        {/* Background Image with slow zoom animation */}
+        {/* Background Image with slow zoom animation (Fallback) */}
         <motion.div 
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -33,6 +33,16 @@ export default function Home() {
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/heroBackground.jpeg')" }}
         />
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="/videos/main.mp4" type="video/mp4" />
+        </video>
         {/* Modern dark overlay with gradient mask */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/70 to-primary/90 z-10" />
         
