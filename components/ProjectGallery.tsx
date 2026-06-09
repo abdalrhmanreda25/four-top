@@ -6,7 +6,15 @@ import { projects } from '@/lib/projectsData';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
-const categories = ['الكل', 'حفلات زفاف', 'معارض', 'مؤتمرات', 'دورات مياه'];
+const categories = [
+  'الكل',
+  'حفلات زفاف',
+  'معارض',
+  'مؤتمرات',
+  'دورات مياه',
+  'تنظيم مخيمات في مهرجان الملك عبد العزيز للإبل',
+  'إيجار الحمامات VIP'
+];
 
 export function ProjectGallery() {
   const [filter, setFilter] = useState('الكل');

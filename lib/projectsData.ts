@@ -166,5 +166,17 @@ export const projects = [
     "title": "حمامات VIP فاخرة ومجهزة بالكامل",
     "category": "دورات مياه",
     "image": "/projects/bathroom.jpeg"
+  },
+  {
+    "id": 29,
+    "title": "تنظيم مخيمات في مهرجان الملك عبد العزيز للإبل",
+    "category": "تنظيم مخيمات في مهرجان الملك عبد العزيز للإبل",
+    "image": "/projects/important-4.jpeg"
+  },
+  {
+    "id": 30,
+    "title": "إيجار الحمامات VIP",
+    "category": "إيجار الحمامات VIP",
+    "image": "/projects/bathroom.jpeg"
   }
 ];

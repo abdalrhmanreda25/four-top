@@ -112,7 +112,23 @@ fs.readdir(destDir, function (err, files) {
         };
     });
 
-    const fileContent = `export const projects = ${JSON.stringify(projects, null, 2)};\n`;
+    const extraProjects = [
+        {
+            title: 'تنظيم مخيمات في مهرجان الملك عبد العزيز للإبل',
+            category: 'تنظيم مخيمات في مهرجان الملك عبد العزيز للإبل',
+            image: '/projects/important-4.jpeg'
+        },
+        {
+            title: 'إيجار الحمامات VIP',
+            category: 'إيجار الحمامات VIP',
+            image: '/projects/bathroom.jpeg'
+        }
+    ].map((project, index) => ({
+        id: projects.length + index + 1,
+        ...project
+    }));
+
+    const fileContent = `export const projects = ${JSON.stringify([...projects, ...extraProjects], null, 2)};\n`;
 
     fs.writeFileSync(path.join(__dirname, '../lib/projectsData.ts'), fileContent);
     console.log('projectsData.ts generated successfully.');
